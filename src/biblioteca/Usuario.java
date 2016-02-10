@@ -14,11 +14,14 @@ public class Usuario {
 	 * Criar um Usuario
 	 * @param st nome do Usuario
 	 */
-	public Usuario(int codigo, String st){
+	public Usuario(int codigo, String st, String user, String pass){
 		this.nome = st;
 		this.codigo = codigo;
 		this.livrosRetirados =  new ArrayList<Livro>();
+		this.login = user;
+		this.senha = pass;
 	}
+		
 	
 	/**
 	 * Retirar um Livro

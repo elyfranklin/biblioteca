@@ -40,11 +40,11 @@ public class Biblioteca {
 				String nome = InterfaceMenu.getString("Nome do Usuario", true);
 				
 				if(cmdAuxiliar.contains("aluno")){
-					user = new UsuarioAluno(codigo, nome, null);
+					user = new UsuarioAluno(codigo, nome, nome,nome);
 				}else if(cmdAuxiliar.contains("professor")){
-					user = new UsuarioProfessor(codigo, nome);	
+					user = new UsuarioProfessor(codigo, nome,nome,nome);	
 				}else{
-					user = new Usuario(codigo, nome);
+					user = new Usuario(codigo, nome,nome,nome);
 				}
 								
 				this.usuarios.add(user);

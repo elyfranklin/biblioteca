@@ -2,10 +2,11 @@ package biblioteca;
 
 public class UsuarioProfessor extends Usuario {
 
-	public UsuarioProfessor(int codigo, String st) {
-		super(codigo, st);
+	public UsuarioProfessor(int codigo, String st, String user, String pass) {
+		super(codigo, st, user, pass);
+		// TODO Auto-generated constructor stub
 	}
-	
+
 	public boolean bloqueia(Livro it, int prazo){
 		return it.bloqueia((Usuario)this, prazo);
 	}

@@ -6,11 +6,12 @@ public class UsuarioAluno extends Usuario {
 
 	private Date dataLimite;
 	
-	public UsuarioAluno(int codigo, String st, Date dt) {
-		super(codigo, st);
-		this.dataLimite = dt;
-	}
 	
+	public UsuarioAluno(int codigo, String st, String user, String pass) {
+		super(codigo, st, user, pass);
+		// TODO Auto-generated constructor stub
+	}
+
 	public void renovaCartao(Date dt){
 		this.dataLimite = dt;
 	}
