@@ -1,0 +1,9 @@
+package biblioteca;
+
+public class Janela {
+
+	public Janela() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
